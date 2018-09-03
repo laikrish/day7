@@ -33,7 +33,7 @@ public class VowelsConsonants {
 		{
 			e.printStackTrace();
 		}
-		return count-1;
+		return count;
 		
 	}
 	

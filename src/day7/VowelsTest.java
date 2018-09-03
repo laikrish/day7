@@ -13,6 +13,6 @@ class VowelsTest {
 	@Test
 	void test() {
 		File file=new File("C:\\day7\\SampleTest.java");
-		assertEquals(19,VowelsConsonants.countVowels(file));
+		assertEquals(20,VowelsConsonants.countVowels(file));
 	}
 }

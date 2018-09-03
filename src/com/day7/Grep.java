@@ -9,7 +9,7 @@ public class Grep {
 
 	public static boolean stringSearch(File file, String string) {
   int lineCount=0;
-  int j=0;
+  
 		if(file.exists()) {
 			try(FileReader filereader=new FileReader(file);
 				BufferedReader br=new BufferedReader(filereader);){
@@ -22,7 +22,7 @@ public class Grep {
 						{
 							if(words[i].equals(string)) {
 								System.out.println(lineCount+ " " +s);
-								j++;
+								
 								break;
 							}
 						}

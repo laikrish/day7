@@ -30,7 +30,7 @@ class MyDateTest {
         
          ArrayList<MyDate> result=new ArrayList<>();
          
-         try(FileOutputStream fileOutput=new FileOutputStream("C:\\Naina\\MyDate.txt");
+         try(FileOutputStream fileOutput=new FileOutputStream("C:\\day7\\SampleTest.java");
        		 ObjectOutputStream objectOutput=new ObjectOutputStream(fileOutput))
        		  {
        	  objectOutput.writeObject(al);
@@ -41,7 +41,7 @@ class MyDateTest {
        	  e.printStackTrace();
          }
          
-         try(FileInputStream fileInput=new FileInputStream("C:\\Naina\\MyDate.txt");
+         try(FileInputStream fileInput=new FileInputStream("C:\\day7\\SampleTest.java");
         		 ObjectInputStream objectInput=new ObjectInputStream(fileInput))
         		  {
         	   result=(ArrayList<MyDate>)objectInput.readObject();
